@@ -15,8 +15,13 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        url: process.env.WPGRAPHQL_URL,
+        url: `http://defaultwptest.wpengine.com/graphql`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-fastify`,
+      /* Default option value shown */
+      options: {},
     },
     "gatsby-plugin-sharp",
     "gatsby-plugin-image",
